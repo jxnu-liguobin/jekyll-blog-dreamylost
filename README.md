@@ -4,7 +4,7 @@
 
 博客基于[MIT License](https://github.com/jxnu-liguobin/cs-summary-reflection/blob/master/docs/LICENSE)开源于[GitHub](https://github.com/jxnu-liguobin/cs-summary-reflection/tree/master/docs)。
 
-博客模板使用[wu-kan](https://wu-kan.github.io)的，并基于原有模板增加了归档、时间排序、修复若干BUG，、代码着色字体自适应手机，现继续分享并开源出来。
+博客模板使用[wu-kan](https://wu-kan.github.io)的，并基于原有模板增加了归档、时间排序、修复若干BUG、字体自适应手机等，现继续分享并开源出来。
 
 该模板需要以下账号支持（不含自定义域名）
 
@@ -13,6 +13,8 @@
 3. jsdelivr CDN支持
 4. 百度统计 网站统计
 5. 一个已经备案过的域名 （最好有）
+
+模板预览地址[https://dreamylost.cn/](https://dreamylost.cn/)
 
 ## 致谢
 
