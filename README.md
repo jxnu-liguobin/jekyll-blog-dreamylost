@@ -6,13 +6,14 @@
 
 博客模板使用[wu-kan](https://wu-kan.github.io)的，并基于原有模板增加了归档、时间排序、修复若干BUG、字体自适应手机等，现继续分享并开源出来。
 
-该模板需要以下账号支持（不含自定义域名）
+该模板需要以下账号支持
 
 1. GitHub 基本账号
 2. valine 评论支持
 3. jsdelivr CDN支持
 4. 百度统计 网站统计
 5. 一个已经备案过的域名 （最好有）
+6. 其他搜索引擎验证文件（可选）
 
 模板预览地址[https://dreamylost.cn/](https://dreamylost.cn/)
 
