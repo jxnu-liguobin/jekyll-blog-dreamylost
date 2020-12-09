@@ -17,16 +17,30 @@ title: 归档
 
 {% assign counts = counts | split: ', ' | reverse %}
 {% assign i = 0 %}
+{% assign preDay = '01-01' %}
 
 {% for post in site.posts %}
     {% assign year = post.date | date: '%Y' %}
     {% assign nyear = post.next.date | date: '%Y' %}
     {% if year != nyear %}  
       
-#### {{ post.date | date: '%Y' }}（{{ counts[i] }}）
+### {{ post.date | date: '%Y' }}（{{ counts[i] }}）
 
 {:.archive-title}
         {% assign i = i | plus: 1 %}
     {% endif %}
-* {{ post.date | date: '%m-%d' }} &raquo; [{{ post.title }}]({{ post.url }} "{{ post.title }}"){:.archive-item-link}
+{% assign currentDay = post.date | date: '%m-%d' %}
+{% if preDay == currentDay %}
+- <small>[{{ post.title }}]({{ post.url }} "{{ post.title }}"){:.archive-item-link}</small>
+    {% if post.description %}
+    - <small>{{ post.description }}</small>
+    {% endif %}
+{% else %}
+{% assign preDay = currentDay %}
+**{{ post.date | date: '%m-%d' }}**
+- <small>[{{ post.title }}]({{ post.url }} "{{ post.title }}"){:.archive-item-link}</small>
+{% if post.description %}
+    - <small>{{ post.description }}</small>
+{% endif %}
+{% endif %} 
 {% endfor %}
